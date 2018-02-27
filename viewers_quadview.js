@@ -1208,7 +1208,7 @@ window.onload = function() {
     $('#overlay').on('click',function(){
       label = {};
       let loader = new LoadersVolume();
-      loader.load('../testData/m241-1.nrrd')
+      loader.load('./testData/m241-1.nrrd')
       .then(function() {
 
 
@@ -1235,7 +1235,7 @@ window.onload = function() {
         label[2]=r2;
         label[3]=r3;
 
-        labelStack['../testData/m241-1.nrrd'] = label;
+        labelStack['./testData/m241-1.nrrd'] = label;
         console.log(labelStack);
         readyTo = true;
         onGreenChanged();
@@ -1276,7 +1276,7 @@ window.onload = function() {
     $('#overlay2').on('click',function(){
       label = {};
       let loader = new LoadersVolume();
-      loader.load('../testData/m241-2.nrrd')
+      loader.load('./testData/m241-2.nrrd')
       .then(function() {
 
 
@@ -1303,7 +1303,7 @@ window.onload = function() {
         label[2]=r2;
         label[3]=r3;
 
-        labelStack['../testData/m241-2.nrrd'] = label;
+        labelStack['./testData/m241-2.nrrd'] = label;
         console.log(labelStack);
         readyTo = true;
         onGreenChanged();
